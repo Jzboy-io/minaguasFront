@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minaguas - registrar reporte</title>
+    <link rel="stylesheet" href="/plugin/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/plugin/css/form.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2 class="mb-3">Formulario de Captura de Datos</h2>
+
+        <form>
+            <div class="mb-3">
+                <label class="form-label">Tipo de incidencia:</label>
+                <select name="" id="" class="form-select" required>
+                    <option value="">Seleccione</option>
+                    <option value="Agua Potable">Agua Potable</option>
+                    <option value="Agua Servida">Agua Servida</option>
+                </select>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Descripción:</label>
+                <textarea name="" class="form-control" id="" rows="3"></textarea>
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label">Nivel Incidencia:</label>
+                <select name="" id="" class="form-select" required>
+                    <option value="">Seleccione</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+            
+            <div class="btn-container">
+                <a href="/view/personas.html" type="submit" class="btn btn-primary">Regresar</a>
+                <button type="submit" class="btn btn-success">Enviar</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
