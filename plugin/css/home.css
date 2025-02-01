@@ -67,6 +67,16 @@ body {
     width: 100%;
 }
 
+.form-content .quest{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-content .quest label{
+    color: #333;
+}
+
 .form-content input {
     padding: 12px;
     background-color: #f9f9f9;
