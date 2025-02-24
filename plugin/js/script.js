@@ -1,33 +1,8 @@
-const sidebar = document.querySelector('.sidebar');
-const toggleSidebarBtn = document.getElementById('menuToggle');
+// Lógica para el botón de hamburguesa
+document.getElementById('menuToggle').addEventListener('click', function() {
+    var sidebar = document.getElementById('sidebar');
+    var mainContent = document.querySelector('.main-content');
 
-toggleSidebarBtn.addEventListener('click', () => {
-    sidebar.classList.toggle('collapsed');
-    sidebar.classList.toggle('active');
+    sidebar.classList.toggle('collapsed');  // Alterna la clase para colapsar o expandir el sidebar
+    mainContent.classList.toggle('collapsed');  // Mueve el contenido principal
 });
-
-//graficos
-const chartConfig = {
-    type: 'bar',
-    data: {
-      labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo'],
-      datasets: [{
-        label: 'Incidencias',
-        data: [12, 19, 3, 5, 2],
-        backgroundColor: 'rgba(75, 192, 192, 0.2)',
-        borderColor: 'rgba(75, 192, 192, 1)',
-        borderWidth: 1
-      }]
-    },
-    options: {
-      responsive: true,
-      plugins: {
-        legend: {
-          position: 'top',
-        }
-      }
-    }
-  };
-
-// Inicializar gráficos
-new Chart(document.getElementById('chart1'), chartConfig);

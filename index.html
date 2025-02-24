@@ -11,7 +11,7 @@
 </head>    
 <body>
     <!-- Sidebar -->
-    <nav class="sidebar d-flex flex-column p-3" id="sidebar">
+    <aside class="sidebar d-flex flex-column p-3" id="sidebar">
         <a href="#" class="d-flex align-items-center mb-3 text-decoration-none text-white">
             <img src="/img/splash.webp" alt="logo" width="40px">
             <span class="fs-5 fw-bold ms-2 px-3">MinAguas</span>
@@ -19,7 +19,7 @@
         <hr class="text-secondary">
         <ul class="nav nav-pills flex-column">
             <li class="nav-item">
-                <a href="/admin.html" class="nav-link">
+                <a href="/index.html" class="nav-link">
                     <i class="bi bi-speedometer2"></i>
                     <span>Panel</span>
                 </a>
@@ -71,13 +71,18 @@
             </li>
         </ul>
         <hr class="text-secondary">
-    </nav>
+        <div class="logout-container">
+            <button class="log-out">
+                <i class="bi bi-box-arrow-in-right"></i>
+            </button>
+        </div>
+    </aside>
     
     <!-- Main Content -->
-    <div class="main-content">
+    <main class="main-content">
         <!-- Topbar -->
         <div class="topbar d-flex align-items-center justify-content-between">
-            <button class="btn btn-light burger-btn" id="menuToggle">
+            <button class="btn burger-btn" id="menuToggle">
                 <i class="bi bi-list"></i>
             </button>
             <div>
@@ -89,9 +94,8 @@
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end">
                     <li><a class="dropdown-item" href="/views/perf.html">Perfil</a></li>
+                    <hr class="dropdown-divider">
                     <li><a class="dropdown-item" href="/views/conf.html">Configuración</a></li>
-                    <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item" href="#">Cerrar Sesión</a></li>
                 </ul>
             </div>
         </div>
@@ -128,7 +132,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </main>
 
     <script src="/plugin/js/bootstrap.bundle.min.js"></script>
     <script src="/plugin/js/script.js"></script>

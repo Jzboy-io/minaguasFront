@@ -54,6 +54,41 @@ body{
     z-index: 1000;
 }
 
+.logout-container{
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.log-out{
+    padding: 8px 16px;
+    border-radius: 10px;
+    font-size: 25px;
+    color: #072a50;
+    background-color: #2d5988;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.log-out:hover{
+    background-color: #072a50;
+    color: #fff;
+}
+
+.burger-btn{
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    transition: all 0.3s ease;
+}
+
+.burger-btn:hover{
+    background-color: #2d5988;
+    color: #fff;
+}
+
 @media (max-width: 768px){
     .sidebar {
         position: fixed;
@@ -107,7 +142,6 @@ body{
 }
 
 /* Graficos */
-
 .card{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: none;
