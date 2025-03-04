@@ -1,8 +1,14 @@
-// Lógica para el botón de hamburguesa
-document.getElementById('menuToggle').addEventListener('click', function() {
-    var sidebar = document.getElementById('sidebar');
-    var mainContent = document.querySelector('.main-content');
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.getElementById("menuToggle");
+    const sidebar = document.getElementById("sidebar");
+    const mainContent = document.getElementById("mainContent");
 
-    sidebar.classList.toggle('collapsed');  // Alterna la clase para colapsar o expandir el sidebar
-    mainContent.classList.toggle('collapsed');  // Mueve el contenido principal
+    menuToggle.addEventListener("click", function () {
+        if (window.innerWidth <= 768) {
+            sidebar.classList.toggle("active");  // Para responsive
+        } else {
+            sidebar.classList.toggle("collapsed");  // Para escritorio
+            mainContent.classList.toggle("collapsed");
+        }
+    });
 });
