@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     menuToggle.addEventListener("click", function () {
         if (window.innerWidth <= 768) {
-            sidebar.classList.toggle("active");  // Para responsive
+            sidebar.classList.toggle("active");  // Para movil
         } else {
             sidebar.classList.toggle("collapsed");  // Para escritorio
             mainContent.classList.toggle("collapsed");
