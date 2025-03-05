@@ -157,9 +157,11 @@ body{
     .filters-container {
         flex-direction: column;
     }
+    
     .filters-container input {
         margin-bottom: 10px;
     }
+
     .filters-container .btn-primary{
         width: 50px;
     }
