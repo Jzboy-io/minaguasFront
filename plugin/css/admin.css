@@ -165,4 +165,17 @@ body{
     .filters-container .btn-primary{
         width: 50px;
     }
+
+    .gen-pdf{
+        display: flex;
+    }
+
+    table, thead, tbody, th, td, tr{
+        display: block;
+    }
+    
+    th{
+        position: absolute;
+        top: -9999px;
+    }
 }
