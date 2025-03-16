@@ -55,10 +55,6 @@
                               <i class="bi bi-envelope"></i>
                               <span>Peticiones</span>
                           </a>
-                          <a href="/view/listamov.html" class="nav-link px-3">
-                              <i class="bi bi-arrow-left-right"></i>
-                              <span>Movimientos</span>
-                          </a>
                       </li>
                   </ul>
               </div>
@@ -78,71 +74,71 @@
         </div>
     </nav>
 
-  <!-- Main Content -->
-  <div class="main-content">
-    <!-- Topbar -->
-    <div class="topbar d-flex align-items-center justify-content-between">
-        <button class="btn btn-light burger-btn" id="menuToggle">
-            <i class="bi bi-list"></i>
-        </button>
-        <div>
-            <button class="btn btn-light me-2">
-                <i class="bi bi-bell"></i>
+    <!-- Main Content -->
+    <div class="main-content">
+        <!-- Topbar -->
+        <div class="topbar d-flex align-items-center justify-content-between">
+            <button class="btn btn-light burger-btn" id="menuToggle">
+                <i class="bi bi-list"></i>
             </button>
-            <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-                <i class="bi bi-person-circle"></i>
-            </button>
-            <ul class="dropdown-menu dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">Perfil</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Configuración</a></li>
-            </ul>
+            <div>
+                <button class="btn btn-light me-2">
+                    <i class="bi bi-bell"></i>
+                </button>
+                <button class="btn btn-light dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="bi bi-person-circle"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Perfil</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Configuración</a></li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- Contenido -->
+    <div class="table-container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2>Lista de Personas</h2>
+            <div>
+                <a href="/views/aggperso.html" class="btn btn-primary">
+                    <i class="bi bi-person-plus"></i>
+                </a>
+            </div>
+        </div>
+
+        <!-- Tabla -->
+        <div class="table-responsive">
+            <table class="table table-striped align-middle">
+                <thead>
+                    <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Cédula</th>
+                    <th>Líder Comunitario</th>
+                    <th>Correo</th>
+                    <th>Teléfono</th>
+                    <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>Juan</td>
+                    <td>Jimenez</td>
+                    <td>30262111</td>
+                    <td>Jalfonzo urrutia</td>
+                    <td>ejemplo@gmail.com</td>
+                    <td>04cataco</td>
+                    <td>
+                        <a class="btn btn-primary btn-sm" href="/views/verperso.html">Ver</a>
+                        <a class="btn btn-warning btn-sm" href="/views/editarperso.html">Editar</a>
+                        <a class="btn btn-success btn-sm" href="/views/aggreport.html">Añadir Incidencia</a>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </div>
-
-  <!-- Contenido -->
-  <div class="table-container">
-    <div class="d-flex justify-content-between align-items-center mb-3">
-        <h2>Lista de Personas</h2>
-          <div>
-            <a href="/views/aggperso.html" class="btn btn-primary">
-                <i class="bi bi-person-plus"></i>
-            </a>
-          </div>
-      </div>
-
-      <!-- Tabla -->
-      <div class="table-responsive">
-          <table class="table table-striped align-middle">
-              <thead>
-                <tr>
-                  <th>Nombre</th>
-                  <th>Apellido</th>
-                  <th>Cédula</th>
-                  <th>Líder Comunitario</th>
-                  <th>Correo</th>
-                  <th>Teléfono</th>
-                  <th>Acciones</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Juan</td>
-                  <td>Jimenez</td>
-                  <td>30262111</td>
-                  <td>Jalfonzo urrutia</td>
-                  <td>ejemplo@gmail.com</td>
-                  <td>04cataco</td>
-                  <td>
-                    <a class="btn btn-primary btn-sm" href="/views/verperso.html">Ver</a>
-                    <a class="btn btn-warning btn-sm" href="/views/editarperso.html">Editar</a>
-                    <a class="btn btn-success btn-sm" href="/views/aggreport.html">Añadir Incidencia</a>
-                  </td>
-                </tr>
-              </tbody>
-          </table>
-      </div>
-  </div>
 
     <script src="/plugin/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>

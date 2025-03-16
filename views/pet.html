@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="/plugin/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="/plugin/css/admin.css"/>
+    <title>Minaguas - admin</title>
+</head>
+<body>
+    <!-- Contenido -->
+    <div class="table-container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2>Detalles de las Peticiones</h2>
+        </div>
+
+        <!-- Filters -->
+        <div class="row g-3 align-items-end filter-section">
+            <div class="col-md-4">
+              <label class="form-label">Fecha de inicio:</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="col-md-4">
+              <label>Fecha de fin:</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="text-end">
+                <button class="btn btn-primary">Filtrar</button>
+            </div>
+        </div>
+
+        <!-- Tabla -->
+        <div class="table-responsive">
+            <table class="table table-striped align-middle">
+                <thead>
+                    <tr>
+                        <th scope="col">Código de incidencia</th>
+                        <th scope="col">Tipo de incidencia</th>
+                        <th scope="col">Descripción</th>
+                        <th scope="col">Nivel de prioridad</th>
+                        <th scope="col">Fecha de creación</th>
+                        <th scope="col">Registrado por</th>
+                        <th scope="col">Estado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>A-234</td>
+                        <td>Aguas negras</td>
+                        <td>Tu sabes</td>
+                        <td>Urgente</td>
+                        <td>03/25/25 - 12:30</td>
+                        <td>Elwaos02</td>
+                        <td>Aceptado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+      </div> 
+
+    <script src="/plugin/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.2/dist/chart.min.js"></script>
+    <script src="/plugin/js/script.js"></script>
+</body>
+</html>

@@ -165,7 +165,7 @@ footer {
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-color: #fff;
+    background: linear-gradient(#00000034, #00000037);
     margin-top: 20px;
 }
 
